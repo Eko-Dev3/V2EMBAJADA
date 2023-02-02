@@ -98,11 +98,13 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 abbr[title],
@@ -146,12 +148,16 @@ dd {
 blockquote {
   margin: 0 0 1rem;
 }
-
+.activado{
+  text-decoration: underline;
+}
 b,
 strong {
   font-weight: bolder;
 }
-
+span{
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 small {
   font-size: 80%;
 }
@@ -536,6 +542,10 @@ kbd {
   color: #fff;
   background-color: #212529;
   border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
 }
 
 kbd kbd {
@@ -10589,13 +10599,21 @@ header .navbar-bottom .navbar-toggler {
 }
 .hero .banner-content {
  /*  position: absolute; */
+
   padding: 80px 60px;
  
   color: #ffffff;
 }
 .hero .banner-content h1 {
+  margin-top: 100px;
   font-size: 40pt;
   font-weight: 1000;
+  width: 80%;
+}
+.hero .banner-content span {
+  font-size: 20px;
+  
+ 
 }
 #bg-video {
   min-width: 100%;
@@ -10618,12 +10636,26 @@ header .navbar-bottom .navbar-toggler {
   bottom: 7px;
   width: 100%;
 }
-
+/* aboutemba */
+.aboutemba{
+  position: relative;
+  padding: 40px 60px;
+  left: 0px;
+  bottom: 100px;
+  color: #ffffff;
+}
 @media (max-width: 999px) {
   .hero .banner-content h1 {
     font-size: 40pt;
     font-weight: 1000;
     margin-top: 100px;
+  }
+  .aboutemba{
+    position: relative;
+    padding: 40px 60px;
+    left: 0px;
+    bottom: 60px;
+    color: #ffffff;
   }
 }
 @media (max-width: 400px) {
@@ -10743,24 +10775,27 @@ header .navbar-bottom .navbar-toggler {
 
 }
 .embajador p {
-font-size: 40px;
+font-size: 25pt;
 padding-top: 20px;
 /* font-weight: bold;
 font-family: 'Times New Roman', Times, serif; */
 font-weight: 400;
 color:rgb(12,16,69);
  line-height: 100%;
-  font-family:'Times New Roman','Open sans', sans-serif; }
+  font-family:'Latin Modern Roman'; 
+}
 
   .about h1,.embajador h1{
     font-family: 'Times New Roman', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 40px; font-weight: bold; }
 
 .about p{
+  font-size: 25pt;
  padding: 10px;
   font-weight: 400;
-  font-size: 27px; 
+/*   font-size: x-large; */
   line-height: 100%;
-  font-family: 'Times New Roman', 'Open sans', sans-serif; }
+  font-family:'Latin Modern Roman'; 
+}
 
   /* ultimasnoticias */
   .ultimasnoticias h1{
@@ -10771,22 +10806,36 @@ color:rgb(12,16,69);
 .call-to-action{
   background-size:cover;
   background-position: center;
-  height: 200px;
+  height: 140px;
   width: 100%;
   background-attachment: fixed;
+  padding: 10px;
   
 }
 .call-to-action p{
- color: white;
- font-weight: bold;
- font-size: 16px;
+  font-size: 16pt;
+  padding: 10px;
+   font-weight: 400;
+ /*   font-size: x-large; */
+   line-height: 100%;
+   font-family:'Latin Modern Roman';
+   color: white; 
+   display: none;
+  
+}
+.call-to-action h1{
+  font-family: 'Times New Roman', arial, serif;
+   line-height: 1.25; 
+   margin: 0 0 10px; 
+   font-size: 20px;
+   font-weight: bold; 
+   color: white;
   
 }
 
 
 @media (max-width: 999px) {
   .hero{
-    
     height: 70vh;
    
   }
@@ -10797,14 +10846,147 @@ color:rgb(12,16,69);
     font-size: 30pt;
     font-weight: 1000;
   }
-  .embajador p {
-    font-size: 16px;
-    padding-top: -5px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: CENTER;
+  
+    /*  */
+    .about h1,.embajador h1,.ultimasnoticias h1{
+      font-family: 'Times New Roman', arial, serif; 
+      line-height: 1.25; 
+      margin: 0 0 0;
+       font-size: 20px; 
+       font-weight: bold; 
     }
+    .embajador p, .about p{
+      font-size: x-large;
+      padding-top: 20px;
+      /* font-weight: bold;
+      font-family: 'Times New Roman', Times, serif; */
+      font-weight: 400;
+      color:gray;
+       line-height: 100%;
+        font-family:'Latin Modern Roman'; 
+    }
+    .call-to-action{
+      background-size:cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      background-attachment: fixed;
+      padding: 10px;
+      
+    }
+  
 }
+/*  */
+
+/* Our Team
+-------------------------------------------------------*/
+
+.our-team .team-row {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.our-team .team-wrap {
+  padding: 0 40px;
+}
+
+.our-team .container-fluid {
+  padding: 0 50px;
+}
+
+.team-img img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-member,
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-title {
+  margin: 30px 0 7px;
+  text-transform: uppercase;
+}
+
+.overlay {
+  background-color: rgba(20,20,20,.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 5%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details p {
+  color: #fff;
+}
+
+.team-img:hover .team-details {
+  opacity: 1;
+  margin-top: -80px;
+}
+
+.team-img:hover .overlay {
+  opacity: 1;
+}
+
+.socials a {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+}
+
+.socials i {
+  line-height: 37px;
+  color: #616161;
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.team-details .socials i {
+	color: #fff;
+}
+
+.socials a:hover i {
+  color: #fff;
+  background-color: #355c7d;
+}
+
+
 /*  */
 .content-wrapper .border-bottom-blue {
   border-bottom: solid 1px #032a63;
