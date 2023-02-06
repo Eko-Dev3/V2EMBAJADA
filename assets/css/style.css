@@ -10788,18 +10788,33 @@ color:rgb(12,16,69);
   .about h1,.embajador h1{
     font-family: 'Times New Roman', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 40px; font-weight: bold; }
 
-.about p{
-  font-size: 25pt;
- padding: 10px;
+.about p,.aboutus-wrapper p{
+  font-size: 20pt;
+  padding-top: 20px;
+  /* font-weight: bold;
+  font-family: 'Times New Roman', Times, serif; */
   font-weight: 400;
-/*   font-size: x-large; */
-  line-height: 100%;
-  font-family:'Latin Modern Roman'; 
+  color:rgb(12,16,69);
+   line-height: 100%;
+    font-family:'Latin Modern Roman'; 
 }
 
   /* ultimasnoticias */
   .ultimasnoticias h1{
     font-family: 'Times New Roman', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 40px; font-weight: bold; 
+  }
+  .teamtit{
+    font-family: 'Times New Roman', arial, serif;
+     line-height: 1.25; 
+     margin: 0 0 10px; 
+     font-size: 30px;
+      font-weight: bold; 
+      
+  }
+  .linetitle{
+    border: 1px rgb(12,16,69);
+    width: 100px;
+    margin-left: 50%;
   }
   
 /* call-to-action */
