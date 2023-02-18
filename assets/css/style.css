@@ -10543,7 +10543,11 @@ header .navbar-bottom .navbar-toggler {
 .image-hover img,
 .image-hover .thumb-title {
   transition: transform 0.4s;
-  /* Animation */
+    /* Animation */:;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s;
+  -ms-transition: transform 0.4s;
+  -o-transition: transform 0.4s;
 }
 
 .image-hover:hover img {
