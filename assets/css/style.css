@@ -10650,7 +10650,7 @@ header .navbar-bottom .navbar-toggler {
   color: #ffffff;
 }
 @media (max-width: 999px) {
-  /* .hero .banner-content h1 {
+   .hero .banner-content h1 {
     font-size: 40pt;
     font-weight: 1000;
     margin-top: 100px;
@@ -10661,7 +10661,7 @@ header .navbar-bottom .navbar-toggler {
     left: 0px;
     bottom: 60px;
     color: #ffffff;
-  } */
+  } 
 }
 @media (max-width: 400px) {
   /* .hero .banner-content h1 {
@@ -11307,3 +11307,31 @@ footer .footer-bottom {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+/* guinea ecuatorial */
+ .thumb-title {
+               padding: 14px 24px;
+               background: #030562;
+               font-size: 12px;
+               font-weight: bold;
+               font-stretch: normal;
+               font-style: normal;
+               line-height: 1.33;
+               letter-spacing: normal;
+               color: #ffffff;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               }
+               .image-hover img,
+               .image-hover .thumb-title {
+               transition: transform 0.4s;
+               /* Animation */
+               }
+               .image-hovers img{
+                  height: 200px;
+                  object-fit: cover;
+               }
+               .image-hoversin{
+                  height: auto;
+                  object-fit: cover;
+               }
