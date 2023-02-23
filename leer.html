@@ -23,9 +23,19 @@
       <!-- inject:css -->
       <link rel="stylesheet" href="./assets/css/style.css">
       <!-- endinject -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
       <!-- font awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-   </head>
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    </head>
    <body>
       <div class="container-scroller">
       <div class="main-panel">
@@ -136,589 +146,393 @@
          </div>
       </header>
     
-     <style>
-      /* Blog Posts */
+  
+     <main>
+        <!-- partial -->
+        <div class="flash-news-banner">
+            <div class="container">
+              <div class="d-lg-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="badge badge-dark mr-3">Flash news</span>
+                  <p class="mb-0">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <span class="mr-3 text-danger">Wed, March 4, 2020</span>
+                  <span class="text-danger">30°C,London</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .container_news{
+                padding-left:100px;
+                padding-right:100px;
 
-.blog-posts {
-    margin-top: 100px;
-}
+                overflow:hidden;
+            }
+            .container_news .portada img{
+                height:60vh;
+                width:100%;
+                object-fit: cover;
+            }
+            @media only screen and (max-width: 769px) {
+              .container_news .portada img{
+                height:100%;
+                width:100%;
+               
+            }
+            .container_news{
+                padding:10px;
+                overflow:hidden;
+            }
+            }
+            .masimagenes {
+              justify-content: center;
+              align-items: center;
+              display: flex;
+             
+            }
+            .masimagenes img{
+              width: 100%;
+              height: 100px;
+              margin: 10px;
+              
+            }
+          </style>
+          <div class="container_news">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card" data-aos="fade-up">
+                  <div class="card-body">
+                   
+                    <div class="row">
+                      <div class="col-lg-9">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="portada">
+                              <img
+                                src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg"
+                                alt="banner"
+                                class="img-fluid"
+                              />
+                            </div>
+                            
+                            
+                            <div class="container mt-3">
+                              <div class="masimagenes">
+                                <div class="d-flex m-1">
+                                 <a data-fancybox="moreimg" href="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg">
+                                  <img class="img-fluid" src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg" alt="">
+                                 </a>
+                                </div>
+                               
+                                <div class="d-flex m-1">
+                                  <a data-fancybox="moreimg" href="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg">
+                                    <img class="img-fluid" src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="d-flex m-1">
+                                  <a data-fancybox="moreimg" href="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg">
+                                    <img class="img-fluid" src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="d-flex m-1">
+                                  <a data-fancybox="moreimg" href="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg">
+                                    <img class="img-fluid" src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg" alt="">
+                                   </a>
+                                </div>
+                                <div class="d-flex m-1">
+                                  <a data-fancybox="moreimg" href="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg">
+                                    <img class="img-fluid" src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg" alt="">
+                                   </a>
+                                </div>
+                               
+                                
+                              </div>
+                            </div>
 
-.blog-posts .blog-post {
-    margin-bottom: 30px;
-}
+                          </div>
+                          <div class="col-lg-12">
+                            
+                            <h2 class="font-weight-600 mb-2 titulo text-uppercase">
+                              CENSO ELECTORAL EN COSTA DE MARFIL
+                            </h2>
+                            
+                            <p class="fs-15 parrafo pt-2">
+                              Lorem Ipsum has been the industry's standard dummy
+                              text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to make a
+                              type specimen book. <br>
 
-.blog-posts .blog-thumb img {
-    width: 100%;
-    overflow: hidden;
-}
+                              <p class="fs-13 text-muted mb-0">
+                                <span class="mr-2">Jueves 21 de Julio del 2022 </span>10 Minutes ago
+                              </p>
+                              <hr>
+                              Lorem Ipsum has been the industry's standard dummy
+                              text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to make a
+                              type specimen book.
+                              Lorem Ipsum has been the industry's standard dummy
+                              text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to make a
+                              type specimen book.
+                              Lorem Ipsum has been the industry's standard dummy
+                              text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to make a
+                              type specimen book.
+                            </p>
+                           
+                          </div>
+                          
+                        </div>
+                      <style>
+               
 
-.blog-posts .down-content {
-    padding: 40px;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
 
-.blog-posts .down-content span {
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: 900;
-    color: #f48840;
-}
 
-.blog-posts .down-content h4 {
-    font-size: 24px;
+.widget {
+  padding: 0px 15px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 30px; }
+  @media screen and (min-width: 375px) {
+    .widget {
+      padding: 30px; } }
+  @media screen and (min-width: 768px) {
+    .widget {
+      margin-bottom: 45px; } }
+  .widget .widget-header .title {
+    font-size: 22px;
+    line-height: 27px;
     text-transform: capitalize;
-    letter-spacing: 0.5px;
-    font-weight: 900;
-    color: #20232e;
-    margin: 10px 0px 12px 0px;
-}
-
-.blog-posts .down-content ul.post-info li {
-    display: inline-block;
-    margin-right: 8px;
-}
-
-.blog-posts .down-content ul.post-info li:after {
-    content: '|';
-    color: #aaa;
-    margin-left: 8px;
-}
-
-.blog-posts .down-content h4 {
-    font-size: 20px;
-    letter-spacing: 0.25px;
-}
-
-.grid-system .down-content ul.post-info li {
-    margin-right: 3px;
-}
-
-.grid-system .down-content ul.post-info li:after {
-    margin-left: 5px;
-}
-
-.blog-posts .down-content ul.post-info li:last-child::after {
-    display: none;
-}
-
-.blog-posts .down-content ul.post-info li a {
-    font-size: 14px;
-    color: #aaa;
-    font-weight: 400;
-    transition: all .3s;
-}
-
-.blog-posts .down-content ul.post-info li a:hover {
-    color: #f48840;
-}
-
-.blog-posts .down-content p {
-    padding: 25px 0px;
-    margin: 25px 0px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
-
-.blog-posts .down-content ul.post-share {
-    text-align: right;
-}
-
-.blog-posts .down-content ul.post-tags li,
-.blog-posts .down-content ul.post-share li {
-    display: inline-block;
-}
-
-.blog-posts .down-content ul.post-tags li:first-child i,
-.blog-posts .down-content ul.post-share li:first-child i {
-    color: #f48840;
-    margin-right: 5px;
-}
-
-.blog-posts .down-content ul.post-tags li,
-.blog-posts .down-content ul.post-share li {
-    color: #aaa;
-}
-
-.blog-posts .down-content ul.post-tags li a,
-.blog-posts .down-content ul.post-share li a {
-    font-size: 14px;
-    color: #aaa;
-    font-weight: 400;
-    transition: all .3s;
-}
-
-.blog-posts .down-content ul.post-tags li a:hover,
-.blog-posts .down-content ul.post-share li a:hover {
-    color: #f48840;
-}
-
-.blog-posts .main-button a {
-    height: 60px;
-    line-height: 60px;
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-}
-<!--  -->
-.blog-posts .sidebar-heading h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 0.5px;
-    color: #20232e;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-}
-
-.blog-posts .comments {
-    margin-top: 30px;
-}
-
-.blog-posts .comments ul li {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.blog-posts .comments ul li.replied {
-    padding-left: 130px;
-}
-
-.blog-posts .comments ul li:last-child {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-bottom: none;
-}
-
-.blog-posts .comments ul li .author-thumb {
-    display: inline;
-    float: left;
-}
-
-.blog-posts .comments ul li .author-thumb img {
-    max-width: 100px;
-    display: inline;
-    border-radius: 50%;
-    height: 60px;
-    object-fit: cover;
-}
-
-.blog-posts .comments ul li .right-content {
-    margin-left: 130px;
-}
-
-.blog-posts .comments ul li .right-content h4 {
-    color: #20232e;
-    font-size: 19px;
-    font-weight: 900;
-    letter-spacing: 0.5px;
-}
-
-.blog-posts .comments ul li .right-content h4 span {
-    font-size: 14px;
-    color: #aaa;
-    font-weight: 400;
-    letter-spacing: 0.25px;
-    margin-left: 20px;
-}
-
-.blog-posts .submit-comment {
-    margin-top: 60px;
-}
-
-.blog-posts .submit-comment input,
-.form-select {
-    width: 100%;
-    height: 46px;
-    border: 1px solid #eee;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #7a7a7a;
-    outline: none;
-    padding: 0px 15px;
-    margin-bottom: 30px;
-}
-
-.blog-posts .submit-comment textarea {
-    width: 100%;
-    height: 46px;
-    border: 1px solid #eee;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #7a7a7a;
-    outline: none;
-    padding: 10px 15px;
-    margin-bottom: 30px;
-    height: 180px;
-    max-height: 220px;
-    max-width: 100%;
-    min-width: 160px;
-}
-
-.blog-posts .submit-comment input::placeholder,
-.blog-posts .submit-comment textarea::placeholder {
-    color: #aaa;
-}
-
-.blog-posts .submit-comment button {
-    display: inline-block;
-    background-color: #f48840;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 12px 20px;
-    text-transform: uppercase;
-    transition: all .3s;
-    border: none;
-    outline: none;
-}
-
-.blog-posts .submit-comment button:hover {
-    background-color: #fb9857;
-}
-
-/* Sidebar */
+    margin-top: -6px;
+    margin-bottom: 0; }
+    .widget .widget-header .title::after {
+      width: 40px;
+      height: 2px;
+      content: "";
+      background: #5350ff;
+      display: block;
+      margin-bottom: 16px;
+      margin-top: 11px; }
+  .widget.widget-search .widget-search-form {
+    position: relative; }
+    .widget.widget-search .widget-search-form input {
+      height: 42px;
+      background: transparent;
+      padding: 0;
+      border-bottom: 1px solid #e5e5e5;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0; }
+      .widget.widget-search .widget-search-form input:focus {
+        border: none;
+        border-bottom: 1px solid #e5e5e5; }
+    .widget.widget-search .widget-search-form button {
+      height: 42px;
+      width: 42px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: transparent;
+      text-align: right;
+      border: none; }
+  .widget.widget-archive ul li, .widget.widget-category ul li {
+    text-transform: capitalize;
+    line-height: 1.688;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0; }
+    .widget.widget-archive ul li a, .widget.widget-category ul li a {
+      padding: 10px;
+      color: #111114;
+      display: flex;
+      justify-content: space-between; 
+      font-weight: bold;
+    }
+      .widget.widget-archive ul li a:hover, .widget.widget-category ul li a:hover {
+        color: #020230;
+        padding-left: 3px; }
+  .widget.widget-category ul li a .amount::after {
+    content: ")"; }
+  .widget.widget-category ul li a .amount::before {
+    content: "("; }
+  .widget.widget-tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    margin-top: 31px; }
+    .widget.widget-tags ul li {
+      padding: 5px; }
+      .widget.widget-tags ul li a {
+        padding: 5px 15px;
+        font-weight: 600;
+        border: 1px solid #e5e5e5;
+        color: #565b73; 
+        font-weight: bold;
+      }
+        .widget.widget-tags ul li a:hover {
+          color: #5350ff;
+          border-color: #5350ff; }
+  .widget.widget-post ul li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0; }
+    .widget.widget-post ul li .sub-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 4px; }
+      .widget.widget-post ul li .sub-title a {
+        color: #0d112b; }
+      @media screen and (max-width: 400px) {
+        .widget.widget-post ul li .sub-title {
+          font-size: 16px; } }
+    .widget.widget-post ul li p {
+      font-size: 14px;
+      margin: 0;
+      color: #5350ff; }
+      .widget.widget-post ul li p a {
+        color: #5350ff;
+        margin-left: 5px; }
+    .widget.widget-post ul li:hover .sub-title a,
+    .widget.widget-post ul li:hover p a {
+      color: #5350ff; }
+  .widget.widget-download ul li {
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.688;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0; }
+    .widget.widget-download ul li a {
+      padding: 10px 0;
+      color: #565b73;
+      display: flex;
+      justify-content: space-between; }
+      .widget.widget-download ul li a:after {
+        content: "\f11f";
+        font-family: Flaticon;
+        font-weight: 600; }
+      .widget.widget-download ul li a:hover {
+        color: #5350ff;
+        padding-left: 3px; }
+  .widget:last-child {
+    margin-bottom: 0; }
 
 .sidebar {
-   
-}
-
-.sidebar .sidebar-item {
-    margin-top: 50px;
-}
-
-.sidebar .search {
-    margin-top: 0px;
-}
-
-.sidebar .sidebar-heading h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 0.5px;
-    color: #20232e;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-}
-
-.sidebar .search input {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #eee;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #7a7a7a;
-    outline: none;
-    padding: 0px 15px;
-}
+  position: sticky; }
+  @media (max-width: 991px) {
+    .sidebar {
+      margin-top: 80px; } }
+  @media (min-width: 992px) {
+    .sidebar {
+      top: 104px; } }
 
 
-/*  */
-
-.sidebar .search input::placeholder {
-    color: #aaa;
-}
-
-.sidebar .recent-posts ul li {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
-
-.sidebar .recent-posts ul li:last-child {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-bottom: none;
-}
-
-.sidebar .recent-posts ul li h5 {
-    font-size: 19px;
-    font-weight: 900;
-    color: #20232e;
-    line-height: 30px;
-    transition: all 0.3s;
-}
-
-.sidebar .recent-posts ul li h5:hover {
-    color: #f48840;
-}
-
-.sidebar .recent-posts ul li span {
-    display: block;
-    font-size: 14px;
-    color: #aaa;
-    margin-top: 8px;
-}
-
-.sidebar .categories ul li {
-    margin-bottom: 15px;
-}
-
-.sidebar .categories ul li:last-child {
-    margin-bottom: 0px;
-}
-
-.sidebar .categories ul li a {
-    font-size: 15px;
-    font-weight: 700;
-    color: #20232e;
-    transition: all .3s;
-}
-
-.sidebar .categories ul li a:hover {
-    color: #f48840;
-}
-
-.sidebar .tags ul li {
-    margin-right: 6px;
-    display: inline-block;
-}
-
-.sidebar .tags ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar .tags ul li a {
-    font-size: 15px;
-    font-weight: 500;
-    color: #aaa;
-    display: inline-block;
-    border: 1px solid #eee;
-    padding: 10px 18px;
-    transition: all .3s;
-}
-
-.sidebar .tags ul li a:hover {
-    background-color: #f48840;
-    border-color: #f48840;
-    color: #fff;
-}
-
-
-
-     </style>
-     <main class="container">
-         <!-- ULTMAS NOTIICIAS -->
-         <section class="blog-posts grid-system">
-             <div class="containe">
-                 <div class="row">
-                     <div class="col-lg-9">
-                         <div class="all-blog-posts">
-                             <div class="row">
-                                 <div class="col-lg-12">
-                                     <div class="blog-post">
-                                         <div class="blog-thumb">
-                                             <img src="https://embajadageci.com/privacysect/upload/thumbnail/62d9765f52ac33.26829542.jpg" alt="">
-                                         </div>
-                                         <div class="down-content">
-                                             <a title="categoria" href=""> <span>Politca</span></a>
-                                             <a href="post-details.html">
-                                                 <h4>Lorem Ipsum Es El Texto Que Se Usa Habitualmenteo</h4>
-                                             </a>
-                                             <ul class="post-info">
-                                                 <li><a href="#">La embajada</a></li>
-                                                 <li><a href="#">Lunes 01 de Agosto 2022</a></li>
-                                                 <li><a href="#">12 Comentarios</a></li>
-                                             </ul>
-                                             <p>You can browse different tags such as <a rel="nofollow" href="https://templatemo.com/tag/multi-page" target="_parent">multi-page</a>, <a rel="nofollow" href="https://templatemo.com/tag/resume" target="_parent">resume</a>,
-                                                 <a rel="nofollow" href="https://templatemo.com/tag/video" target="_parent">video</a>, etc. to see more CSS templates. Sed hendrerit rutrum arcu, non malesuada nisi. Sed id facilisis turpis. Donec justo elit,
-                                                 dapibus vel ultricies in, molestie sit amet risus. In nunc augue, rhoncus sed libero et, tincidunt tempor nisl. Donec egestas, quam eu rutrum ultrices, sapien ante posuere nisl, ac eleifend eros orci vel
-                                                 ante. Pellentesque vitae eleifend velit. Etiam blandit felis sollicitudin vestibulum feugiat.
-                                                 <br><br>Donec tincidunt leo nec magna gravida varius. Suspendisse felis orci, egestas ac sodales quis, venenatis et neque. Vivamus facilisis dignissim arcu et blandit. Maecenas finibus dui non pulvinar lacinia.
-                                                 Ut lacinia finibus lorem vel porttitor. Suspendisse et metus nec libero ultrices varius eget in risus. Cras id nibh at erat pulvinar malesuada et non ipsum. Suspendisse id ipsum leo.</p>
-                                             <div class="post-options">
-                                                 <div class="row">
-                                                     <div class="col-6">
-                                                         <ul class="post-tags" title="etiquetas">
-                                                             <li><i class="fa fa-tags"></i></li>
-                                                             <li><a href="#">Africa</a>,</li>
-                                                             <li><a href="#">Politica</a></li>
-                                                         </ul>
-                                                     </div>
-                                                     <div class="col-6">
-                                                         <ul class="post-share">
- 
-                                                             <li><i class="fa fa-share-alt">Compartir</i></li>
-                                                             <li><a href="#">Facebook</a>,</li>
-                                                             <li><a href="#"> Twitter</a> o</li>
-                                                             <li><a href="#"> Whatsapp</a></li>
-                                                         </ul>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="col-lg-12">
-                                     <div class="sidebar-item comments">
-                                         <div class="sidebar-heading">
-                                             <h2>12 comentarios</h2>
-                                         </div>
-                                         <div class="content">
-                                             <ul>
-                                                 <li>
-                                                     <div class="author-thumb">
-                                                         <img src="https://cdn-icons-png.flaticon.com/512/2922/2922579.png" alt="">
-                                                     </div>
-                                                     <div class="right-content">
-                                                         <h4>Maria Andeme<span> Lunes 01 de Agosto 2022</span></h4>
-                                                         <p>Fusce ornare mollis eros. Duis et diam vitae justo fringilla condimentum eu quis leo. Vestibulum id turpis porttitor sapien facilisis scelerisque. Curabitur a nisl eu lacus convallis eleifend posuere
-                                                             id tellus.</p>
-                                                     </div>
-                                                 </li>
-                                                 <li>
-                                                     <div class="author-thumb">
-                                                         <img src="https://cdn-icons.flaticon.com/png/512/3220/premium/3220198.png?token=exp=1660918232~hmac=98d9aa7521b4e49955e015076cca41c5" alt="">
-                                                     </div>
-                                                     <div class="right-content">
-                                                         <h4 class="text-capitalize">Juan Antonio<span> Martes 02 de Agosto 2022</span></h4>
-                                                         <p>In porta urna sed venenatis sollicitudin. Praesent urna sem, pulvinar vel mattis eget.</p>
-                                                     </div>
-                                                 </li>
- 
- 
- 
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="col-lg-12">
-                                     <div class="sidebar-item submit-comment">
-                                         <div class="sidebar-heading">
-                                             <h2>Deje su comentario</h2>
-                                         </div>
-                                         <div class="content">
-                                             <form id="comment" action="#" method="post">
-                                                 <div class="row">
-                                                     <div class="col-md-6 col-sm-12">
-                                                         <fieldset>
-                                                             <input name="name" type="text" id="name" placeholder="Su nombre" required="">
-                                                         </fieldset>
-                                                     </div>
-                                                     <div class="col-md-6 col-sm-12">
-                                                         <fieldset>
-                                                             <input name="email" type="text" id="email" placeholder="Su email" required="">
-                                                         </fieldset>
-                                                     </div>
-                                                     <div class="col-md-6 m-auto">
-                                                         <select class="form-select" class aria-label="Default select example">
-                                                             <option selected>Seleccione su sexo </option>
-                                                             <option value="1">Masculino</option>
-                                                             <option value="2">Femenino</option>
-                                                           
-                                                           </select>
-                                                     </div>
-                                                     <div class="col-lg-12">
-                                                         <fieldset>
-                                                             <textarea name="message" rows="6" maxlength="300" minlength="2" id="message" placeholder="Escriba su comentario con un maximo de 300 caracteres " required=""></textarea>
-                                                         </fieldset>
-                                                     </div>
-                                                     <div class="col-lg-6 m-auto">
-                                                         <fieldset>
-                                                             <button type="submit" id="form-submit" class="main-button">Publicar comentario</button>
-                                                         </fieldset>
-                                                     </div>
-                                                 </div>
-                                             </form>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-3">
-                         <div class="sidebar">
-                             <div class="row">
-                                 <div class="col-lg-12">
-                                     <div class="sidebar-item search">
-                                         <form id="search_form" name="gs" method="GET" action="#">
-                                             <input type="text" name="q" class="searchText" placeholder="Ecribe para buscar " autocomplete="on">
-                                         </form>
-                                     </div>
-                                 </div>
-                                 <div class="col-lg-12">
-                                     <div class="sidebar-item recent-posts">
-                                         <div class="sidebar-heading">
-                                             <h2>últimas noticias</h2>
-                                         </div>
-                                         <div class="content">
-                                             <ul>
-                                                 <li>
-                                                     <a href="post-details.html">
-                                                         <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
-                                                         <span>Lunes dia 01 de Agosto  2022</span>
-                                                     </a>
-                                                 </li>
-                                                 <li>
-                                                     <a href="post-details.html">
-                                                         <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
-                                                         <span>Lunes dia 01 de Agosto  2022</span>
-                                                     </a>
-                                                 </li>
-                                                 <li>
-                                                     <a href="post-details.html">
-                                                         <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
-                                                         <span>Lunes dia 01 de Agosto  2022</span>
-                                                     </a>
-                                                 </li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="col-lg-12">
-                                     <div class="sidebar-item categories">
-                                         <div class="sidebar-heading">
-                                             <h2>Categorías</h2>
-                                         </div>
-                                         <div class="content">
-                                             <ul>
-                                                 <li><a href="#">- Politca</a></li>
-                                                 <li><a href="#">- Gobierno</a></li>
-                                                 <li><a href="#">- Cultura</a></li>
-                                                 <li><a href="#">- Deporte</a></li>
- 
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="col-lg-12">
-                                     <div class="sidebar-item tags">
-                                         <div class="sidebar-heading">
-                                             <h2>Etiquetas</h2>
-                                         </div>
-                                         <div class="content">
-                                             <ul>
-                                                 <li><a href="#">Guinea Ecuatorial</a></li>
-                                                 <li><a href="#">Africa</a></li>
-                                                 <li><a href="#">Gobierno</a></li>
-                                                 <li><a href="#">Embajada</a></li>
-                                                 <li><a href="#">Juventud</a></li>
-                                                 <li><a href="#">Consulado</a></li>
- 
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </section>
- 
- 
- 
- 
- 
+      
+                      </style>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="widget widget-category">
+                          <div class="widget-header">
+                              <h5 class="title">Categorias</h5>
+                          </div>
+                          <ul>
+                              <li><a href="javascript:void(0);">masking SMS<span class="amount">25</span></a></li>
+                              <li><a href="javascript:void(0);">Non - Masking SMS<span class="amount">04</span></a></li>
+                              <li><a href="javascript:void(0);">Location Based<span class="amount">40</span></a></li>
+                              <li><a href="javascript:void(0);">voice messages<span class="amount">28</span></a></li>
+                              <li><a href="javascript:void(0);">promotional messages<span class="amount">29</span></a></li>
+                              <li><a href="javascript:void(0);">email service<span class="amount">99</span></a></li>
+                          </ul>
+                        </div>
+                        <h2 class="mb-4 text-primary font-weight-600">
+                            Últimas noticias
+                        </h2>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="border-bottom pb-4 pt-4">
+                              <div class="row">
+                                <div class="col-sm-8">
+                                  <h5 class="font-weight-600 mb-1">
+                                    Ways to stay social online while in self..
+                                  </h5>
+                                  <p class="fs-13 text-muted mb-0">
+                                    <span class="mr-2">Photo </span>10 Minutes ago
+                                  </p>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="rotate-img">
+                                    <img
+                                      src="../assets/images/sports/Sports_1.jpg"
+                                      alt="banner"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="border-bottom pb-4 pt-4">
+                              <div class="row">
+                                <div class="col-sm-8">
+                                  <h5 class="font-weight-600 mb-1">
+                                    Premier League players join charity..
+                                  </h5>
+                                  <p class="fs-13 text-muted mb-0">
+                                    <span class="mr-2">Photo </span>10 Minutes ago
+                                  </p>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="rotate-img">
+                                    <img
+                                      src="../assets/images/sports/Sports_2.jpg"
+                                      alt="banner"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="pt-4">
+                              <div class="row">
+                                <div class="col-sm-8">
+                                  <h5 class="font-weight-600 mb-1">
+                                    UK Athletics board changed stance on..
+                                  </h5>
+                                  <p class="fs-13 text-muted mb-0">
+                                    <span class="mr-2">Photo </span>10 Minutes ago
+                                  </p>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="rotate-img">
+                                    <img
+                                      src="../assets/images/sports/Sports_3.jpg"
+                                      alt="banner"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main-panel ends -->
      </main>
  
       <!-- partial -->
