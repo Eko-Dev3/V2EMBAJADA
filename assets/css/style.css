@@ -10224,7 +10224,8 @@ header .navbar .navbar-brand img {
 }
 
 header .navbar-top {
-  padding: 24px 0;
+  padding: 10px 0;
+ 
 }
 
 header .navbar-top .navbar-top-left-menu,
@@ -10257,7 +10258,7 @@ header .navbar-top .navbar-top-right-menu .nav-item .nav-link {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  font-family: "Times New Roman", Times, serif;
+/*   font-family: "Times New Roman", Times, serif; */
 }
 
 header .navbar-top .navbar-top-left-menu .nav-item .nav-link:hover,
@@ -10308,12 +10309,12 @@ header .navbar-top .navbar-top-right-menu .nav-item:last-child .nav-link {
 }
 
 header .navbar-bottom {
-  padding-bottom: 24px;
+  padding-bottom: 5px;
 }
 
 @media (max-width: 999px) {
   header .navbar-bottom {
-    padding-top: 24px;
+    padding-top: 14px;
   }
 }
 
@@ -10325,7 +10326,7 @@ header .navbar-bottom {
 
 header .navbar-bottom .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 13px;
   color: #fff;
   font-weight: 600;
   font-stretch: normal;
@@ -10684,14 +10685,16 @@ header .navbar-bottom .navbar-toggler {
 }
 #serviceBoxs{
   margin-top: 120px;
+ 
 }
 .serviceBox{
+  cursor: pointer;
     padding: 30px 30px 30px 90px;
     background: white;
     color: #333;
     overflow: hidden;
     position: relative;
-    transition: all 0.3s ease-in-out 0s;
+  /*   transition: all 0.3s ease-in-out 0s; */
     /*border: 1px solid blue;
     */box-shadow: 1px 1px 1px 1px;
     border-radius: 10px;
@@ -10703,39 +10706,15 @@ header .navbar-bottom .navbar-toggler {
     height: 300px;
 }
 
-.serviceBox:hover{
-    /* background: whitesmoke; */
-    color: black;
-    cursor: pointer;
-}
 
-.serviceBox:after{
-    content: "";
-    display: block;
-    border-top: 500px solid #fff;
-    border-left: 500px solid transparent;
-    margin-top: -55%;
-    margin-left: 100%;
-    opacity: 0;
-    position: absolute;
-    transform: scale(2);
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.serviceBox:hover:after{
-    margin-left: 0;
-    opacity: 0.1;
-}
 
 .serviceBox .service-icon img{
   object-fit: COVER;
   
-    transition:all 0.3s ease-in-out 0s;
+    /* transition:all 0.3s ease-in-out 0s; */
 }
 
-.serviceBox:hover .service-icon{
-    color: #fff;
-}
+
 
 .serviceBox .title{
     font-size: 22px;
@@ -10752,9 +10731,7 @@ header .navbar-bottom .navbar-toggler {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.serviceBox:hover .description{
-    color: #fff;
-}
+
 
 @media only screen and (max-width: 990px){
   #serviceBoxs{
@@ -11341,7 +11318,7 @@ footer .footer-bottom {
 
 
                /*  */
-                        .bulk-thumb {
+          .bulk-thumb {
             text-align: center; 
             padding: 70px;
          }
@@ -11352,10 +11329,14 @@ footer .footer-bottom {
             }
             @media (max-width: 991px) {
                .bulk-thumb {
-                  margin-bottom: 40px; } }
+                  margin-bottom: 40px; 
+                  padding: -0px;
+                } }
             @media (max-width: 767px) {
                .bulk-thumb {
-                  margin-bottom: 35px; } }
+                  margin-bottom: 35px; 
+            
+                  padding: -0px;} }
                   .bulk-content span {
                text-transform: uppercase;
                display: block;
